@@ -19,7 +19,9 @@ WHERE `cfu` >= 11;
 ## 3-Selezionare tutti gli studenti che hanno più di 30 anni
 
 ````sql
-
+SELECT * 
+FROM `students` 
+WHERE YEAR(`date_of_birth`)<= 1993; 
 ````
 
 ## 4-Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea  (286)
@@ -35,7 +37,9 @@ WHERE `cfu` >= 11;
 ## 6-Selezionare tutti i corsi di laurea magistrale  (38)
 
 ````sql
-
+SELECT * 
+FROM `degrees`
+ WHERE level = 'magistrale'; 
 ````
 
 ## 7-Da quanti dipartimenti è composta l'università? (12)
