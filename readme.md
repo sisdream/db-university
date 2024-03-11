@@ -51,14 +51,14 @@ FROM `degrees`
 ## 7-Da quanti dipartimenti è composta l'università? (12)
 
 ````sql
-SELECT * 
-FROM `departments` 
+SELECT COUNT(*) as `total_departments` 
+FROM `departments`; 
 ````
 
 ## 8-Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
 ````sql
-SELECT * 
+SELECT COUNT(*) as `no_phone_teachers`
 FROM `teachers` 
 WHERE `phone` IS NULL; 
 ````
